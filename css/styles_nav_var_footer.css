@@ -1,0 +1,161 @@
+/* NAV BAR */
+#linea_h1 {
+    border: none; 
+    height: 3px; 
+    margin: 0px; 
+    background-color: #000000; 
+    position: fixed; 
+    top: 75px; 
+    left: 0; 
+    width: 100%; 
+}
+
+/* Estilo principal */
+#home {
+    padding-top: 10px; 
+    background-color: #a4d65e; 
+    font-family: Arial, sans-serif; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+#barra body {
+    position: fixed; 
+    width: 100%; 
+}
+
+#home header {
+    padding: 10px 20px; 
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+}
+
+/* Contenedores */
+nav #izquierda, nav #derecha {
+    display: flex; 
+    align-items: center; 
+}
+
+nav #izquierda {
+    padding-left: 10px; 
+}
+
+nav #derecha {
+    padding-left: 10px; 
+}
+
+/* Imágenes */
+nav #izquierda img {
+    height: 40px; 
+    width: 40px; 
+    background-color: #a4d65e; 
+    opacity: 0.5; 
+}
+
+nav #derecha img {
+    height: 40px; 
+    width: 40px; 
+}
+
+nav #izquierda img {
+    padding-right: 5px; 
+}
+
+nav #derecha img {
+    padding-right: 15px; 
+}
+
+/* Barra búsqueda */
+nav input[type="text"] {
+    width: 300px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+/* Enlaces navegación */
+nav a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+nav a:hover {   
+    text-decoration: underline; 
+}
+
+/* FOOTER */
+footer {
+    background-color: #2E7D32; 
+    color: rgb(245, 241, 241); 
+    text-align: center; 
+    padding: 20px 0; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0; 
+}
+
+.footer-content p {
+    margin: 5px 0; 
+}
+
+/* ----- Media Queries para Responsiveness ----- */
+
+/* Móviles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; 
+        align-items: center; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    nav input[type="text"] {
+        width: 50%; 
+        padding: 5px; 
+        margin: 0 auto; 
+        margin-left: 10px; 
+    }
+
+    nav a {
+        font-size: 14px; 
+        margin: 5px; 
+    }
+
+    nav #izquierda img, nav #derecha img {
+        height: 30px; 
+        width: 30px; 
+    }
+}
+
+/* Ajuste para pantallas pequeñas (480px o menos) */
+@media (max-width: 480px) {
+    nav {
+        height: auto; 
+    }
+
+    nav input[type="text"] {
+        width: 70%; 
+        padding: 3px; 
+        margin: 0 auto; 
+    }
+
+    nav a {
+        font-size: 12px; 
+    }
+
+    nav #izquierda img, nav #derecha img {
+        height: 25px; 
+        width: 25px; 
+    }
+}

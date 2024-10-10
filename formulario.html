@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+    <head>
+        <title>Stilo - Formulario</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles_formulario.css">
+        <link rel="stylesheet" href="css/styles_nav_var_footer.css">
+    </head>
+
+    <body>
+        <div id="home">
+            <header>
+                <nav>
+                    <div id="izquierda">
+                        <a href="index.html">
+                            <img src="fotos/logo.png" alt="logo">
+                        </a>
+                        
+                        <a href="catalogo.html">Catalogo</a>
+                        <a href="quienes_somos.html">Quienes Somos</a>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Buscar">
+                    </div>
+                    <div id="derecha">
+                        <a href="formulario.html">Empleo</a>
+                        <a href="carrito.html">
+                            <img src="fotos/carrito.png" alt="carrito">
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+        <hr id="linea_h1">
+        </div>  
+
+        <img src="fotos/contrato.png" alt="contrato">
+
+        <div>
+            <h2>Únete a Nosotros y Marca la Diferencia</h2>
+            <p id="descripcion">En Stilo, creemos que cada individuo tiene el potencial para cambiar el mundo. Únete a nosotros en la búsqueda de la innovación y la excelencia, y descubre cómo tu voz puede ser escuchada en un entorno donde cada idea cuenta.</p>
+        </div>
+
+        <div class="formulario">
+            <br>
+            <h2>Formulario de Empleo</h2>
+            <form>
+                <fieldset id="general">
+                    <br>
+                    <div id="formu">
+                        <fieldset id="usuario">
+                            <legend>Datos del usuario</legend>
+                            <label>Nombre y apellidos:</label> <input type="text">
+                            <br><br>
+    
+                            <label>Fecha de nacimiento:</label>
+    
+                            <input type="date" value="2024-09-17">
+                            <br><br>
+            
+                            <label>Email:</label> <input type="text">
+                            <br><br>
+                            <label>Numero de telefono:</label> <input type="text">
+                            <br><br>
+    
+                            <label>Localidad</label> 
+                            <select name="comunidades">
+                                <option>Andalucía</option>
+                                <option>Aragón</option>
+                                <option>Asturias</option>
+                                <option>Baleares</option>
+                                <option>Canarias</option>
+                                <option>Cantabria</option>
+                                <option>Castilla y León</option>
+                                <option>Castilla-La Mancha</option>
+                                <option>Cataluña</option>
+                                <option>Comunidad Valenciana</option>
+                                <option>Extremadura</option>
+                                <option>Galicia</option>
+                                <option selected>País Vasco</option>
+                                <option>Madrid</option>
+                                <option>Murcia</option>
+                                <option>Navarra</option>
+                                <option>La Rioja</option>
+                                <option>Ceuta</option>
+                                <option>Melilla</option>
+                            </select>
+                            
+                            <br>
+            
+                        </fieldset> 
+    
+                        <fieldset id="laboral">
+                            <legend>Datos Laborales</legend>
+    
+                            <label>Tiene estudios universitarios?</label>
+
+                            <div class="radio-group">
+                                <input type="radio" name="estudios" value="s" checked> 
+                                <label>Si, tengo estudios universitarios</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" name="estudios" value="n"> 
+                                <label>No, no tengo estudios universitarios</label>
+                            </div>
+    
+                            <label>Hora de inicio preferida:</label>
+    
+                            <input type="time" value="08:00">
+                            <br><br>
+            
+                            <textarea name="textarea" rows="10" cols="50">Indique si necesita algo en concreto</textarea>
+            
+                        </fieldset>
+
+                    </div>
+
+                    <div id="final">
+                        <br>
+                        <label>Acepto las condiciones</label><input type="checkbox" name="condiciones" value="c">
+                        <br><br>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Stilo. Todos los derechos reservados.</p>
+                <p>Contáctanos: info@stilo.com</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>

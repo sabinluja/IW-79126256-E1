@@ -1,0 +1,164 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 25px;
+}
+
+/* Catálogo productos */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Productos */
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-imagen {
+    width: 100%;
+    border-radius: 10px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Precios */
+.precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.precio-antiguo {
+    font-size: 18px;
+    color: #777;
+    text-decoration: line-through;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.precio-nuevo {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Talla cantidad */
+.talla-cantidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 8px 0;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.input-contador {
+    width: 60px;
+    text-align: center;
+}
+
+/* Botones */
+.boton-anadir {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.boton-anadir:hover {
+    background-color: #45a049;
+}
+
+/* ----- Media Queries para Responsiveness ----- */
+
+/* Móviles */
+@media (max-width: 1024px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .producto-imagen {
+        height: 300px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .producto-imagen {
+        height: 250px;
+    }
+}
+
+/* Ajustes para pantallas móviles (hasta 480px) */
+@media (max-width: 480px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .producto {
+        padding: 10px;
+    }
+
+    .producto-imagen {
+        height: 220px;
+    }
+
+    .nombre {
+        font-size: 1rem;
+    }
+
+    .precio-antiguo, .precio-nuevo {
+        font-size: 16px;
+    }
+
+    .boton-anadir {
+        font-size: 0.8rem;
+    }
+}

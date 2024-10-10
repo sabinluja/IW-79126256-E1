@@ -1,0 +1,174 @@
+/* Estilos Generales */
+body {
+    margin: 0px;
+}
+
+/* Estilos portada */
+#portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #c1e1c1, #4CAF50);
+    text-align: center;
+}
+
+#titulo {
+    font-size: 80px;
+    color: #005f00;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#frase {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Línea horizontal */
+#linea_portada {
+    border: none;
+    height: 3px;
+    margin: 0px;
+    background-color: #000000;
+}
+
+/* Sección fotos */
+#fotos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Ajuste fotos */
+.foto {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto img {
+    width: 480px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detalle-producto {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.detalle-producto h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+}
+
+.precio-antiguo {
+    font-size: 18px;
+    color: #777;
+    text-decoration: line-through;
+}
+
+.precio-descuento {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Líneas verticales */
+.separador {
+    width: 3px;
+    height: 700px;
+    background-color: #000;
+    transform: rotate(5deg);
+    margin: 0 10px;
+}
+
+/* Botón "Ver Más" */
+.ver-mas {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #45a049;
+}
+
+/* ----- Media Queries para Responsiveness ----- */
+
+/* Móviles */
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 50px;
+    }
+
+    #frase {
+        font-size: 18px;
+    }
+}
+
+/* Sección de fotos responsive */
+@media (max-width: 1200px) {
+    #fotos {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .foto img {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .separador {
+        display: none;
+    }
+}
+
+/* Ajuste para pantallas pequeñas (480px o menos) */
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 36px;
+    }
+
+    #frase {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .detalle-producto h3 {
+        font-size: 18px;
+    }
+
+    .precio-antiguo, .precio-descuento {
+        font-size: 16px;
+    }
+
+    .boton {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}

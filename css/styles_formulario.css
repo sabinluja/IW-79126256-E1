@@ -1,0 +1,161 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    background-color: #e1e1f7;
+    font-family: Arial, sans-serif;
+}
+
+body img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/* Estilos formulario */
+.formulario {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#general {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 40%;
+}
+
+fieldset #formu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+fieldset #final {
+    text-align: left;
+}
+
+/* Descripción */
+#descripcion {
+    width: 27%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Radio group */
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    margin-left: 10px;
+}
+
+.radio-group input {
+    margin-bottom: 15px;
+}
+
+/* Labels inputs */
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#laboral input[type="text"],
+#laboral input[type="date"],
+#laboral input[type="email"],
+#laboral input[type="tel"],
+#laboral input[type="time"],
+#laboral textarea, select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* ----- Media Queries para Responsiveness ----- */
+
+/* Móviles */
+@media (max-width: 768px) {
+    #general {
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    #descripcion {
+        width: 80%;
+    }
+
+    fieldset #formu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (480px o menos) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    #general {
+        max-width: 90%;
+    }
+
+    #descripcion {
+        width: 100%;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
